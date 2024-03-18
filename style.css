@@ -1,0 +1,49 @@
+#editor {
+  border: 1px solid #ccc;
+  width: 800px;
+  position: relative;
+  /* padding: 10px; */
+  overflow: none;
+}
+#editor * {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+#editor div {
+  display: flex; /* Flexboxレイアウトを使用 */
+  flex-direction: row;
+  align-items: center; /* 縦方向の中央揃え */
+  flex-wrap: nowrap;
+  min-width: 0; /* コンテナの最小幅を0に設定 */
+  height: 100%;
+}
+#editor img {
+  width: 12px; /* 画像の最大幅を100pxに設定 */
+  height: auto; /* 高さを自動調整してアスペクト比を保持 */
+}
+
+#icons img {
+  width: 12px;
+  /* height: auto; */
+  margin: 5px;
+  cursor: grab;
+}
+
+.icon {
+  width: 12px;
+}
+
+textarea {
+  resize: none; /* 手動リサイズを禁止 */
+  width: 100%;
+  min-height: 600px;
+
+  overflow: hidden;
+}
+textarea:focus {
+  outline: none;
+}
+textarea::-webkit-scrollbar {
+  display: none;
+}
